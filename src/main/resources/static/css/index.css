@@ -30,4 +30,24 @@
     width: 100px;
     height: 100px;
 }
+.absolute{
+    position:absolute;
+    border: 3px solid green;
+    top:120;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+}
+.cuadrado{
+    width:200px;
+    height:200px;
+    background: #aaa;
+    margin-bottom:20px;
+    display:inline-block;
+    
+}
+a{
+    display:block;
+}
 
+/*Control + shift + c para comentar en css*/
