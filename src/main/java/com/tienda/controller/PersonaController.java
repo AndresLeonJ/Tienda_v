@@ -38,8 +38,8 @@ public class PersonaController {
     @GetMapping("/personaN")
     public String crearPersona(Model model){
       List<Pais> listaPaises = paisService.listCountry();
-      model.addAttributte("persona", new Persona());
-      model.addAttributte("paises", listaPaises());
+      model.addAttribute("persona", new Persona());
+      model.addAttribute("paises", listaPaises();
       return("crear");
     
 }
