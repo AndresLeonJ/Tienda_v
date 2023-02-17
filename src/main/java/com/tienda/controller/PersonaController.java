@@ -1,7 +1,7 @@
 
 package com.tienda.controller;
 
-import ch.qos.logback.core.model.Model;
+
 import com.tienda.entity.Pais;
 import com.tienda.entity.Persona;
 import com.tienda.service.IPaisService;
@@ -11,6 +11,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.Model;
+import org.springframework.ui.Model;
 
 
 /**
@@ -36,8 +38,8 @@ public class PersonaController {
     @GetMapping("/personaN")
     public String crearPersona(Model model){
       List<Pais> listaPaises = paisService.listCountry();
-      model.addAtributte("persona", new Persona());
-      model.addAtributte("paises", listaPaises());
+      model.addAttributte("persona", new Persona());
+      model.addAttributte("paises", listaPaises());
       return("crear");
     
 }
