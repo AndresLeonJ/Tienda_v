@@ -4,11 +4,13 @@ import com.tienda.entity.Persona;
 import com.tienda.repository.PersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Andres
  */
+@Service
 public class PersonaService implements IPersonaService {
     
     @Autowired
