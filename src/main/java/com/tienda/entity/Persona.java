@@ -30,8 +30,9 @@ public class Persona implements Serializable{
     private String telefono;
     private String email;
     
-    @ManyToOne
-    @JoinColumn(name="paises_id")
+    @ManyToOne // basicamente sirve para llamar el foreign key 
+
+    @JoinColumn(name="paises_id") // y ese foreign key se encuentra en paises_id
     private Pais pais;
 
     public long getId() {

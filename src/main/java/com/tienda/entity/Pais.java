@@ -15,15 +15,21 @@ import java.io.Serializable;
  *
  * @author Andres
  */
-
+//El Entity, Controller etc es una función de el spring framework para poder 
+//indicar el como se va a comportar nuestra clase
 @Entity
+//Sirve para definir a que tabla le esta haciendo referencia
 @Table(name = "paises")
 public class Pais implements Serializable{
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    
+    @Id //cumple el rol de un id 
+    
+    @GeneratedValue(strategy= GenerationType.IDENTITY) //Sirve para definir 
+                                                 //que el id es auto incremental
     private long id; 
     private String pais;
-
+    
+//realizamos los getters y los setters 
     public long getId() {
         return id;
     }

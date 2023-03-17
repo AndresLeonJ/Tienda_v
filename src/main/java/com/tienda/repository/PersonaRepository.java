@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
  * @author Andres
  */
 @Repository
-public interface PersonaRepository extends CrudRepository<Persona,Long>{
-    
+public interface PersonaRepository extends CrudRepository<Persona,Long> {
+    //
 }
