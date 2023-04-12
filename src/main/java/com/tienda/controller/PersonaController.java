@@ -55,13 +55,8 @@ public class PersonaController {
         model.addAttribute("paises", listaPaises);
         return "crear";
     }
-    @GetMapping("/persona/{apellido}")
-    public String findByApellido(@PathVariable("apellido") String apellido, Model model) {
-    List<Persona> personas = personaService.findByApellido(apellido);
-    model.addAttribute("titulo", "Personas con el apellido " + apellido);
-    model.addAttribute("personas", personas);
-    return "persona";
+    
 }
-}
+
 
 

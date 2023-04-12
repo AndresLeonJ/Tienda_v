@@ -17,5 +17,5 @@ public interface IPersonaService {
     public Persona getPersonaById(long id);
     public void savePersona(Persona persona);
     public void delete (long id);
-    List<Persona> findByApellido(String apellido);
+   
 }
